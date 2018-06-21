@@ -42,7 +42,8 @@ and open the template in the editor.
                         <li><a href="p2">Promociones</a></li>
                         <li><a href="#">Informacion del cine</a></li>
                     </ul>
-                  
+                    <br>
+                    
                 </div>
 
                 <!-- <h2>Iniciar sesión</h2>
