@@ -33,31 +33,50 @@ and open the template in the editor.
         <div class="contenedor-form">
 
 
-            <div class="formulario" >
-                <div class="container">
-                    <h3>Tabs</h3>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Peliculas</a></li>
-                        <li><a href="#">Dulceria</a></li>
-                        <li><a href="p2">Promociones</a></li>
-                        <li><a href="#">Informacion del cine</a></li>
-                    </ul>
-                    <br>
-                    
-                </div>
+            <div class="container">
+                <h2>Panel de Control Administrador</h2>
+                <p>Bienvenido</p>
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">Peliculas</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Dulceria</a></li>
+                    <li><a data-toggle="pill" href="#menu2">Promociones</a></li>
+                    <li><a data-toggle="pill" href="#menu3">Informacion del cine</a></li>
+                </ul>
 
-                <!-- <h2>Iniciar sesión</h2>
-                 <form action="validar.php" method="post">
-                     <input type="text" placeholder="Usuario" required name="usuario">
-                     <input type="password" placeholder="Contraseña" required name="contraseña">
-                     <input type="submit" value="Iniciar Sesión">
-                 </form>      
-             </div>
- 
-             
- 
-             <div class="reset-password">
-                 <a href="#">Olvide Mi contraseña</a>
-             </div>-->
-                </body>
-                </html>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>Peliculas</h3>
+                       <input type="text" placeholder="Nombre de la Pelicula" required name="txtbnompelicula">
+                       <input type="date" placeholder="Fecha de estreno" required name="dtestreno">
+                       <input type="selcombo" placeholder="Duracion" required name="cmbDuracion">
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Dulceria</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>Promociones</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>Informacion del cine</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <h2>Iniciar sesión</h2>
+             <form action="validar.php" method="post">
+                 <input type="text" placeholder="Usuario" required name="usuario">
+                 <input type="password" placeholder="Contraseña" required name="contraseña">
+                 <input type="submit" value="Iniciar Sesión">
+             </form>      
+         </div>
+
+         
+
+         <div class="reset-password">
+             <a href="#">Olvide Mi contraseña</a>
+         </div>-->
+    </body>
+</html>

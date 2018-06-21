@@ -30,8 +30,8 @@
             <div class="formulario" >
                 <h2>Iniciar sesión</h2>
                 <form action="validar.php" method="post">
-                    <input type="text" placeholder="Usuario" required name="usuario">
-                    <input type="password" placeholder="Contraseña" required name="contraseña">
+                    <input type="text" placeholder="Usuario" required name="txtusuario">
+                    <input type="password" placeholder="Contraseña" required name="txtcontraseña">
                     <input type="submit" value="Iniciar Sesión">
                 </form>      
             </div>

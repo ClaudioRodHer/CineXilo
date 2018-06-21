@@ -1,9 +1,6 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'root', '','CineXilotzin');
+$mysqli = new mysqli('localhost', 'root', '','CineXilotzin')or die("Problemas al conectar a la base de datos");
 
-if ($mysqli->connect_error){
-	die('Error en la coneccion' . $mysqli->connect_error);
-	}
-	printf("La coneccion se realizo con exito: %s\n", $mysqli->server_info);
+?>
 

@@ -15,11 +15,11 @@ body{
     background-attachment: fixed;
     font-family: 'Futura-Bold', arial;
 }
-.contenedor-form{
+.contenedor-form .container{
     position: relative;
     background: rgba(0,0,0,.7);
     width:100%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 48px  auto;
     color: #fff;
     border-radius: 5px; 
@@ -56,6 +56,7 @@ body{
     font-size: 20px;
     font-weight: 400;
     line-height: 1px; 
+    color: #fff;
 }
 
 .contenedor-form input[type="text"],
@@ -125,4 +126,8 @@ transition: all .5s ease;
 /*muestra segundo formulario*/
 .contenedor-form .formulario:nth-child(2){
     display: block;
+}
+.contenedor-form .data-toggle{
+    background: #ff43c6;
+    color: #fff;
 }
