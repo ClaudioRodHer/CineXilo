@@ -2,7 +2,6 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta charset="UTF-8">
         <title>Login</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,35 +17,26 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <!------ Include the above in your HEAD tag ---------->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
         <title>Login</title>
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
         <div class="contenedor-form">
-            <div class="toggle">
-                <span>Crear cuenta</span>
-            </div>
+          
 
-            <div class="formulario">
+            <div class="formulario" >
                 <h2>Iniciar sesión</h2>
-                <form action="#">
-                    <input type="text" placeholder="Usuario" required>
-                    <input type="password" placeholder="Contraseña" required>
+                <form action="validar.php" method="post">
+                    <input type="text" placeholder="Usuario" required name="usuario">
+                    <input type="password" placeholder="Contraseña" required name="contraseña">
                     <input type="submit" value="Iniciar Sesión">
                 </form>      
             </div>
 
-            <div class="formulario">
-                <h2>Crea tu cuenta</h2>
-                <form action="#">
-                    <input type="text" placeholder="Usuario" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <input type="email" placeholder="Correo Electronico" required>
-                    <input type="text" placeholder="Telefono" required>
-                    <input type="submit" value="Registrarse">
-                </form>      
-            </div>
+            
 
             <div class="reset-password">
                 <a href="#">Olvide Mi contraseña</a>
