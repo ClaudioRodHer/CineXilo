@@ -1,4 +1,4 @@
-$('.toggle').click(function (){
+$('.fun').click(function (){
     $('.formulario').animate({
         height:"toggle",
         'padding-top':'toggle',

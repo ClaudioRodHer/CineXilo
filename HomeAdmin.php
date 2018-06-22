@@ -52,7 +52,27 @@ and open the template in the editor.
                         <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion de la pelicula"></textarea> 
                         <input type="submit" value="Agregar imagen">
                         <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
-                        <input type="submit" value="Agregar Funciones">
+                        
+                        <input type="submit" value="Agregar Funciones" class="fun">
+                            
+                        <div class="formulario" >
+                            <h2>Ingresa funcion principal</h2>
+                            <form action="#">
+                                <center> <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Hora de Estreno
+                                    </label>
+                                    </div></center>
+                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh " required>
+                                <h2>demas funciones</h2>
+                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh" required>
+                                <input type="submit" value="Agregar">
+                                <input type="submit" value="Listo">
+
+                            </form>      
+                        </div>
+
                         <center><div class="input-group">
                             <select class="custom-select" id="inputGroupSelect04">
                                 <option selected>Idioma</option>
@@ -83,37 +103,60 @@ and open the template in the editor.
                                         Estreno Principal
                                     </label>
                             </div></center>
-                        <div class="formulario" >
-                            <h2>Ingresa funcion principal</h2>
-                            <form action="#">
-                                <center> <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Hora de Estreno
-                                    </label>
-                                    </div></center>
-                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh " required>
-                                <h2>demas funciones</h2>
-                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh" required>
-                                <input type="submit" value="Agregar">
-                                <input type="submit" value="Listo">
-
-                            </form>      
-                        </div>
-
+                        
+                        <input type="submit" value="Agregar Pelicula" class="done">
+                        <input type="submit" value="Agregar Nueva imagen" class="new">
+                        <input type="submit" value="Editar Pelicula" class="edit">
+                        <input type="submit" value="Elliminar Pelicula" class="drop">
 
                     </div>
                     <div id="menu1" class="tab-pane fade">
                         <h3>Dulceria</h3>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <input type="text" placeholder="Nombre del producto" required name="txtproducto"/>
+                        <center><div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect04">
+                                    <option selected>Tipo</option>    
+                                    <option value="1">Bebida</option>
+                                    <option value="2">Snack</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Aceptar</button>
+                                </div>
+                            </div></center>
+                        <input type="text" placeholder="precio del producto" required name="txtproductoprecio"/>
+                        <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion del producto"></textarea> 
+                        <input type="submit" value="Agregar imagen">
+                        <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                        <input type="submit" value="Agregar producto">
+                        <input type="submit" value="Editar Producto" class="edit">
+                        <input type="submit" value="Elliminar Producto" class="drop">
                     </div>
                     <div id="menu2" class="tab-pane fade">
                         <h3>Promociones</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <input type="text" placeholder="Nombre de la promocion" required name="txtpromocion"/>
+                        <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion de la promocion"></textarea> 
+                        <input type="submit" value="Agregar imagen">
+                        <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                        <input type="submit" value="Agregar Promocion">
+                        <input type="submit" value="Editar Promocion" class="edit">
+                        <input type="submit" value="Elliminar Promocion" class="drop">
                     </div>
                     <div id="menu3" class="tab-pane fade">
                         <h3>Informacion del cine</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        
+                        <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la dHistoria del Cine"></textarea>
+                        <input type="text" placeholder="link de facebok" required name="txtproducto"/>
+                        <input type="text" placeholder="link de instagram" required name="txtproducto"/>
+                        <input type="text" placeholder="Agregar ubicacion" required name="txtproducto"/>
+                        <input type="text" placeholder="E-mail" required name="txtproducto"/>
+                        <input type="text" placeholder="Telefono" required name="txtproducto"/>
+                         <input type="submit" value="Agregar imagenes del cine">
+                        <input type="submit" value="Agregar mapa">
+                        <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                        <input type="submit" value="Agregar ">
+                        <input type="submit" value="Editar " class="edit">
+                        <input type="submit" value="Elliminar" class="drop">
+                        
                     </div>
                 </div>
             </div>
@@ -131,5 +174,6 @@ and open the template in the editor.
          <div class="reset-password">
              <a href="#">Olvide Mi contraseña</a>
          </div>-->
+            <script src="js/main.js"></script>
     </body>
 </html>

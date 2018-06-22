@@ -58,7 +58,6 @@ body{
     line-height: 1px; 
     color: #fff;
 }
-
 .contenedor-form input[type="text"],
 .contenedor-form input[type="date"],
 .contenedor-form input[type="time"],
@@ -127,7 +126,7 @@ body{
 
 .contenedor-form .formulario{
     padding: 40px;
-
+    display:none;
 
 }
 /*muestra segundo formulario*/
