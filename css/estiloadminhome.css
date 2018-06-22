@@ -7,7 +7,7 @@
 }
 @font-face{
     font-family: 'Futura-Bold', arial;
-        src: url("http://allfont.es/allfont.css?fonts=futura-bold");
+    src: url("http://allfont.es/allfont.css?fonts=futura-bold");
 }
 body{
     background: url(../img/fondo3.jpg );
@@ -23,8 +23,8 @@ body{
     margin: 48px  auto;
     color: #fff;
     border-radius: 5px; 
-    
-   /* padding: 40px; */
+
+    /* padding: 40px; */
 }
 
 .contenedor-form .toggle{
@@ -43,12 +43,12 @@ body{
 }
 
 .contenedor-form .toggle span{
-        letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .contenedor-form .toggle:hover{
-     border-top: 2px solid #9b0b91;
-     border-bottom: 2px solid #9b0b91;
+    border-top: 2px solid #9b0b91;
+    border-bottom: 2px solid #9b0b91;
 }
 
 .contenedor-form h2{
@@ -60,30 +60,37 @@ body{
 }
 
 .contenedor-form input[type="text"],
-.contenedor-form input[type="password"],
-.contenedor-form input[type="email"]{
-outline:none;
-background: rgba(0,0,0,.5);
-display:blok;
-width: 100%;
-padding :10px 15px;
-color: #fff;
-border: none;
-border-radius: 2px;
-border-bottom: 4px solid #9b0b91;
-font-family:  'Futura-Bold', arial;
-font-size: 14px;
-font-weight: normal;
-margin:0 0 20px 0;  
-transition: all .5s ease;
+.contenedor-form input[type="date"],
+.contenedor-form input[type="time"],
+.contenedor-form input[type="textarea"],
+.contenedor-form input[type="submit"],
+.contenedor-form input[type="datetime-local"],
+.contenedor-form input[type="form-check"],
+.contenedor-form input[type="btn btn-outline-secondary"],
+.contenedor-form input[type="custom-select"]{    
+    outline:none;
+    background: rgba(0,0,0,.5);
+    display:blok;
+    width: 100%;
+    padding :10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #9b0b91;
+    font-family:  'Futura-Bold', arial;
+    font-size: 14px;
+    font-weight: normal;
+    margin:0 0 20px 0;  
+    transition: all .5s ease;
 }
 .contenedor-form input[type="text"]:focus,
 .contenedor-form input[type="password"]:focus,
-.contenedor-form input[type="email"]:focus {
+.contenedor-form input[type="date"]:focus,
+.contenedor-form input[type="time"]:focus {
     border-bottom: 4px solid #f7b7f3;
-    
+
 }   
-    
+
 .contenedor-form input[type="submit"]{
     background: #9b0b91;
     color: #fff;
@@ -100,7 +107,7 @@ transition: all .5s ease;
 
 .contenedor-form input[type="submit"]:hover{
     background: #ff43c6;
-   
+
 }
 
 .contenedor-form .reset-password{
@@ -109,19 +116,19 @@ transition: all .5s ease;
     padding: 15px 0;
     text-align: center;
     border-bottom-right-radius: 5px;
-     border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .contenedor-form .reset-password a{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    
+
 }
 
 .contenedor-form .formulario{
     padding: 40px;
-    
-    
+
+
 }
 /*muestra segundo formulario*/
 .contenedor-form .formulario:nth-child(2){
@@ -130,4 +137,20 @@ transition: all .5s ease;
 .contenedor-form .data-toggle{
     background: #ff43c6;
     color: #fff;
+}
+.contenedor-form.input-group{
+    outline:none;
+    background: rgba(0,0,0,.5);
+    display:blok;
+    width: 100%;
+    padding :10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #9b0b91;
+    font-family:  'Futura-Bold', arial;
+    font-size: 14px;
+    font-weight: normal;
+    margin:0 0 20px 0;  
+    transition: all .5s ease;
 }
