@@ -46,9 +46,62 @@ and open the template in the editor.
                 <div class="tab-content">
                     <div id="home" class="tab-pane fade in active">
                         <h3>Peliculas</h3>
-                       <input type="text" placeholder="Nombre de la Pelicula" required name="txtbnompelicula">
-                       <input type="date" placeholder="Fecha de estreno" required name="dtestreno">
-                       <input type="selcombo" placeholder="Duracion" required name="cmbDuracion">
+                        <input type="text" placeholder="Nombre de la Pelicula" required name="txtbnompelicula"/>
+                        <input type="date" placeholder="Fecha de estreno:0000-00-00" required name="dtestreno"/>
+                        <input type="time" placeholder="Duracion: hh-mm-ss" required name="txtDuracion"/>
+                        <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion de la pelicula"></textarea> 
+                        <input type="submit" value="Agregar imagen">
+                        <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                        <input type="submit" value="Agregar Funciones">
+                        <center><div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                                <option selected>Idioma</option>
+                                <option value="1">Español</option>
+                                <option value="2">Ingles</option>
+                                <option value="3">Español(España)</option>
+                                <option value="4">Frances</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Aceptar</button>
+                            </div>
+                            </div></center>
+                        <center><div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                                <option selected>Subtitulos</option>    
+                                <option value="1">Español</option>
+                                <option value="2">Ingles</option>
+                                <option value="3">Español(España)</option>
+                                <option value="4">Frances</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Aceptar</button>
+                            </div>
+                            </div></center>
+                        <center><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Estreno Principal
+                                    </label>
+                            </div></center>
+                        <div class="formulario" >
+                            <h2>Ingresa funcion principal</h2>
+                            <form action="#">
+                                <center> <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Hora de Estreno
+                                    </label>
+                                    </div></center>
+                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh " required>
+                                <h2>demas funciones</h2>
+                                <input type="datetime-local" placeholder="ingrese horario 0000-00-00 hh" required>
+                                <input type="submit" value="Agregar">
+                                <input type="submit" value="Listo">
+
+                            </form>      
+                        </div>
+
+
                     </div>
                     <div id="menu1" class="tab-pane fade">
                         <h3>Dulceria</h3>
