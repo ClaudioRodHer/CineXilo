@@ -1,0 +1,202 @@
+ * {box-sizing: border-box}
+            body {
+                font-family: 'Futura-Bold', arial;
+                background-color:#FF43C6 ;
+
+            }
+
+            /* Style the tab */
+            .tab {
+                float: left;
+                border: 1px solid #FF43C6;
+                background-color: #FF43C6 ;/*COLOR DE FONDO DE LAS  TABS*/
+                width: 30%;
+                height: 300px;
+                /*debo poner la  separacion entre tabs*/
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                display: block;
+                background-color: #6b6b6b; /*ESPARA EL COLOR SIN SELECCIONAR DE LAS TABS*/
+                color: black;
+                padding: 22px 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #ddd;/*ESPARA EL COLOR AL PASAR EL CURSOR PARA SELECCIONAR DE LAS TABS*/
+            }
+
+            /* Create an active/current "tab button" class */
+            .tab button.active {
+                background-color: #000000;/*ESPARA EL COLOR AL SELECCIONAR DE LAS TABS*/
+                color: white;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                float: left;
+                padding: 0px 12px;
+                border: 1px solid #FF43C6;
+                background-color:#000000;
+                width: 70%;
+                border-left: none;
+                height:auto;
+            }
+            .title{
+                color: #000000;
+                font-size: 50px;
+            }
+
+ /*--------------------------------------------------------------------------------------------------------------*/
+ *{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Futura-Bold', arial;
+        src: url("http://allfont.es/allfont.css?fonts=futura-bold");
+}
+ .contenedor-form{
+    position: relative;
+    background: rgba(0,0,0,.7);
+    width:100%;
+    max-width: 500px;
+    margin: 48px  auto;
+    color: #fff;
+    border-radius: 5px; 
+    
+   /* padding: 40px; */
+}
+
+.contenedor-form .toggle{
+    position:absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size:  12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ff43c6;
+    border-bottom: 2px solid #ff43c6;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contenedor-form .toggle span{
+        letter-spacing: 1px;
+}
+
+.contenedor-form .toggle:hover{
+     border-top: 2px solid #9b0b91;
+     border-bottom: 2px solid #9b0b91;
+}
+
+.contenedor-form h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1px; 
+}
+
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"]{
+outline:none;
+background: rgba(0,0,0,.5);
+display:blok;
+width: 100%;
+padding :10px 15px;
+color: #fff;
+border: none;
+border-radius: 2px;
+border-bottom: 4px solid #9b0b91;
+font-family:  'Futura-Bold', arial;
+font-size: 14px;
+font-weight: normal;
+margin:0 0 20px 0;  
+transition: all .5s ease;
+}
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid #f7b7f3;
+    
+}   
+    
+.contenedor-form input[type="submit"]{
+    background: #9b0b91;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family:  'Futura-Bold', arial;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;  
+    transition: .5s ease;
+}  
+
+.contenedor-form input[type="submit"]:hover{
+    background: #ff43c6;
+   
+}
+
+.contenedor-form .reset-password{
+    background: #ff43c6;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+.contenedor-form .reset-password a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.contenedor-form .formulario{
+    padding: 40px;
+    
+    
+}
+/*muestra segundo formulario*/
+.contenedor-form .formulario:nth-child(2){
+    display: block;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+.navbar-inverse:before, .navbar-inverse:after{
+    content: "";
+    display: table;
+}
+.navbar-inverse:after{
+    clear:both;
+}
+.navbar-inverse:before{
+    *zoom: 1; /*PErmite escalar el contenido*/
+}
+
+         
+nav a#pull{
+    display: none;
+}
+      
+/*menu*/
+
+            

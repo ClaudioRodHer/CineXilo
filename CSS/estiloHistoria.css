@@ -1,0 +1,47 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#general{
+
+margin:auto;
+	width:1250px;
+	height:500px;
+	margin-top:10px;
+	border-style:solid;
+	border-color:#FF43C6;
+	background-color:#FF43C6;
+	
+}
+
+div#resenias{
+	 float: left;
+	width:770px;
+	height:500px;
+	border-style:solid;
+	border-color:#FF43C6;
+	background-color:#000;
+	
+}
+
+div#informacion{
+	 float: right;
+	width:470px;
+	height:500px;
+	border-style:solid;
+	border-color:#FF43C6;
+	background-color:#000;
+	
+}
+
+div#fotosC{
+	
+	width:770px;
+	height:200px;
+	border-style:solid;
+	border-color:#FF43C6;
+	background-color:#000;
+}
+
+
