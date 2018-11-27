@@ -11,15 +11,16 @@ $TipoProm=$_POST['tipoPromocion'];
 	//Ruta donde se almacenar� la foto
 	$ruta = "img/promociones";
 	//extraemos la imagen o foto en archivo
-	$archivo = $_FILES["foto"]["tmp_name"];
+	$archivo = $_FILES["fotoProm"]["tmp_name"];
 	//extraer el nombre del archivo
-	$nombreArchivo = $_FILES["foto"]["name"];
+	$nombreArchivo = $_FILES["fotoProm"]["name"];
 
 	$rutaArch = $ruta . "/" . $nombreArchivo;
  
 //hacer consultas para ver que onda con las claves
 $sql = "call procePromociones('$nombPromocion','$fechaeInicioProm','$fechaFinProm','$DescripProm','$TipoProm','$rutaArch');";
 		//checar conect
+move_uploaded_file($_FILES['fotoProm']['tmp_name'],$rutaArch);
 if (mysqli_query($miconexion, $sql)) {
   echo "Promocion Registrada correctamente<br> causa: $sql";
     //header('Refresh: 10; URL=HomeAdmin.php');

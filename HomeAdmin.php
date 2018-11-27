@@ -59,7 +59,7 @@ error_reporting(0);
                             <input type="time" placeholder="Duracion: ej.(01-45-00)" required name="txtDuracion"/>
                             <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion de la pelicula"></textarea> 
                             <h4>Agregar Imagen</h4>
-                            <input type="File" name="foto" id="foto"><!-- solo hacepta-->
+                            <input type="File" name="foto" id="foto"><!-- solo acepta-->
                             <div id="imagePreview">
                                 
                             </div>
@@ -147,6 +147,7 @@ error_reporting(0);
                                         ?>
                                     </select>
                                 </div></center>
+                            
                             <!--Es el chec box para definir si es estreno principal(solo se podra seleccionar 1 por semana)-->
                             <center><div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -181,7 +182,12 @@ error_reporting(0);
                                             ?>
                                         </select>
                                     </div></center>
-
+                                 
+                              
+                                      <?php
+                                $img=$conexion->query("SELECT URLImagenPelicula FROM CineXilotzin.Peliculas WHERE idPeliculas=".peliculas."");
+                                            echo "$img";
+                                ?>
                                 <center> <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                         <label class="form-check-label" for="defaultCheck1">
@@ -226,8 +232,33 @@ error_reporting(0);
                             <input type="text" placeholder="precio del producto" required name="txtproductoprecio"/>
                             <textarea name="txaDescripcion" rows="6" cols="68" placeholder="Ingresa la descripcion del producto"></textarea> 
                             <h4>Agregar Imagen</h4>
-                            <input type="file" value="Agregar imagen" name="foto" id="foto">
-                            <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                            <input type="file" value="Agregar imagen" name="fotoDulce" id="fotoDulce">
+                            
+                            <div id="imagePreviews">
+                                
+                            </div>
+                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                          
+                            <script type="text/javascript">
+                                (function(){
+                                    function filePreview(input){
+                                        if(input.files && input.files[0]){
+                                            var reader=new FileReader();
+                                            reader.onload=function(e){
+                                                $('#imagePreviews').html("<center><img src='"+e.target.result+"' alt='imgPelicula' width='200' height='200' border='2'></center>");
+                                            }
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                    $('#fotoDulce').change(function(){
+                                        filePreview(this);
+                                    });
+                                })();
+                            </script>
+                            
+
+                            <br><br>
+                           
                             <input type="submit" value="Agregar producto">
                             <input type="submit" value="Editar Producto" class="edit">
                             <input type="submit" value="Elliminar Producto" class="drop">
@@ -252,8 +283,33 @@ error_reporting(0);
 
                                 </div></center>
                             <h4>Agregar imagen de la Promocion</h4>
-                            <input type="File" value="Agregar imagen" name="foto" id="foto">
-                            <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                            <input type="File" value="Agregar imagen" name="fotoProm" id="fotoProm">
+                           
+                              
+                            <div id="imagePreviewP">
+                                
+                            </div>
+                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                          
+                            <script type="text/javascript">
+                                (function(){
+                                    function filePreview(input){
+                                        if(input.files && input.files[0]){
+                                            var reader=new FileReader();
+                                            reader.onload=function(e){
+                                                $('#imagePreviewP').html("<center><img src='"+e.target.result+"' alt='imgPelicula' width='200' height='200' border='2'></center>");
+                                            }
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                    $('#fotoProm').change(function(){
+                                        filePreview(this);
+                                    });
+                                })();
+                            </script>
+                            
+
+                            <br><br>
                             <input type="submit" value="Agregar Promocion">
                             <input type="submit" value="Editar Promocion" class="edit">
                             <input type="submit" value="Elliminar Promocion" class="drop">
@@ -271,8 +327,33 @@ error_reporting(0);
                             <input type="text" placeholder="Telefono" required name="Telefonocine"/>
                             <input type="text" placeholder="E-Mail" required name="correoCine"/>
                             <h4>Ingresa un mapa del cine</h4>
-                            <input type="file" value="Agregar mapa" name='foto' id='foto'>
-                            <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                            <input type="file" value="Agregar mapa" name='fotoINF' id='fotoINF'>
+                            
+                             
+                            <div id="imagePreviewINF">
+                                
+                            </div>
+                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                          
+                            <script type="text/javascript">
+                                (function(){
+                                    function filePreview(input){
+                                        if(input.files && input.files[0]){
+                                            var reader=new FileReader();
+                                            reader.onload=function(e){
+                                                $('#imagePreviewINF').html("<center><img src='"+e.target.result+"' alt='imgPelicula' width='200' height='200' border='2'></center>");
+                                            }
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                    $('#fotoINF').change(function(){
+                                        filePreview(this);
+                                    });
+                                })();
+                            </script>
+                            
+
+                            <br><br>
                             <input type="submit" value="Actualizar ">
 
                         </form>
@@ -282,9 +363,32 @@ error_reporting(0);
                         <form action="AgregarFotosCineCod.php" method="post" enctype="multipart/form-data">
                             <h3>Fotos del cine</h3>
                             <h5>selecciona las fotos apra el cine</h5>
-                            <input type="file" value="Agregar imagenes del cine" name="foto" id="foto">
+                            <input type="file" value="Agregar imagenes del cine" name="fotoMap" id="fotoMap">
 
-                            <center><img src="img/fondo2.jpg" alt="imgPelicula" width="200" height="200" border="2"></center>
+                           <div id="imagePreviewMap">
+                                
+                            </div>
+                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+                          
+                            <script type="text/javascript">
+                                (function(){
+                                    function filePreview(input){
+                                        if(input.files && input.files[0]){
+                                            var reader=new FileReader();
+                                            reader.onload=function(e){
+                                                $('#imagePreviewMap').html("<center><img src='"+e.target.result+"' alt='imgPelicula' width='200' height='200' border='2'></center>");
+                                            }
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                    $('#fotoMap').change(function(){
+                                        filePreview(this);
+                                    });
+                                })();
+                            </script>
+                            
+
+                            <br><br> 
                             <input type="submit" value="Agregar ">
                             <input type="submit" value="Editar " class="edit">
                             <input type="submit" value="Elliminar" class="drop">

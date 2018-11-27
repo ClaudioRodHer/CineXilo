@@ -27,46 +27,46 @@
         <LINK REL=StyleSheet HREF="CSS/fonts.css" />
        <!--<script src="JS/menuhamurguesa.js"></script>-->
     </head>
- 
+
     <body>
         <header>
-            
-         <!----------------------------------------------------------------------------------------------------->           
+
+            <!----------------------------------------------------------------------------------------------------->           
             <div class="menu_bar">
                 <a href="#" class="bt-menu"><span class="glyphicon glyphicon-menu-hamburger"></span>Xilotzin</a>            
             </div>
             <!----------------------------------------------------------------------------------------------------->       
             <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
+                <div class="container-fluid">
 
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="Home.php">Inicio</a></li>
-                    <li><a href="Cartelera.php">Cartelera</a></li>
-                    <li ><a href="Dulceria.php">Dulceria</a></li>
-                    <li><a href="Promociones.php">Promociones</a></li>
-                    <li><a href= "Boletos.php">Boletos</a></li>
-                    <li><a href="Historia.php">Historia</a></li>
-                </ul>
-              <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://www.facebook.com/CineTeatroXilotzin/" target="_blank">
-                            <span class="fa fa-facebook" ></span> </a></li>
-                    <li><a href="https://www.instagram.com/explore/locations/268154316896875/cine-teatro-xilotzin/" target="_blank">
-                            <span class="fa fa-instagram" ></span></a></li>
-                </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Home.php">Inicio</a></li>
+                        <li><a href="Cartelera.php">Cartelera</a></li>
+                        <li ><a href="Dulceria.php">Dulceria</a></li>
+                        <li><a href="Promociones.php">Promociones</a></li>
+                        <li><a href= "Boletos.php">Boletos</a></li>
+                        <li><a href="Historia.php">Historia</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.facebook.com/CineTeatroXilotzin/" target="_blank">
+                                <span class="fa fa-facebook" ></span> </a></li>
+                        <li><a href="https://www.instagram.com/explore/locations/268154316896875/cine-teatro-xilotzin/" target="_blank">
+                                <span class="fa fa-instagram" ></span></a></li>
+                    </ul>
 
 
-            </div>
-        </nav> 
+                </div>
+            </nav> 
         </header>
-   
 
 
-    <!-- --------------------------AQUI EMPIEZA EL CODIGO DE LA PAGINA----------------------- -->    
-    <h1></h1>
-    <div class="title">
+
+        <!-- --------------------------AQUI EMPIEZA EL CODIGO DE LA PAGINA----------------------- -->    
+        <h1></h1>
+        <div class="title">
             <p1><center><b>Cine/Teatro Xilotzin</b></center></p1> 
         </div>
-    
+
 
     <center> <div class="container"> 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -81,7 +81,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-						
+
                         <img src="cine3.jpg" alt="Estreno!!" style="width:70%;">
                     </div>
 
@@ -92,21 +92,20 @@
                     <div class="item">
                         <img src="cine1.jpg" alt="Ven y Festeja con nosotros" style="width:70%;">
                     </div>
-                    
+
                     <div class="item">
-                    <?php
-						$conexion=mysqli_connect("localhost","root","","CineXilotzin");
-						//$query=$conexion->query("SELECT URLImagenPelicula FROM CineXilotzin.Peliculas WHERE URLImagenPelicula=img/peliculas/antmanWasp.jpeg");
-						echo' <img src="img/peliculas/V0hEsux.jpg" alt="Ven y Festeja con nosotros" style="width:40%;">';
-								//validar fechasde registro mas recientes 
-                                                                //para poderactiar la pelicula y asi remplazar
-                                                                // la imagenque esta dentro de los carruseles, 
-                                                                // que se vayan recorreindo de posicion 
-                                                                // de acuerdo a su fecha de incersion 
-                                                                // tomar fecha automatica del sistema
-                                                
-                                                
-					?>
+                        <?php
+                        $conexion = mysqli_connect("localhost", "root", "", "CineXilotzin");
+                        //$query=$conexion->query("SELECT URLImagenPelicula FROM CineXilotzin.Peliculas WHERE URLImagenPelicula=img/peliculas/antmanWasp.jpeg");
+                        //$sql=$conexion->query("select URLImagenPelicula from Peliculas where Fecha_Estreno_Pelicula  < DATE_FORMAT(NOW(),'%Y-%m-%d 00:00:00');");
+                        echo' <img src="img/peliculas/link1.jpg" alt="Ven y Festeja con nosotros" style="width:40%;">';
+                        //validar fechasde registro mas recientes 
+                        //para poderactiar la pelicula y asi remplazar
+                        // la imagenque esta dentro de los carruseles, 
+                        // que se vayan recorreindo de posicion 
+                        // de acuerdo a su fecha de incersion 
+                        // tomar fecha automatica del sistema  
+                        ?>
                     </div>
 
                     <!-- Wrapper for slides -->
@@ -128,4 +127,4 @@
 
 
 </html>
- 
+

@@ -9,15 +9,17 @@ $reseniaProd=$_POST['txaDescripcion'];
 
 	//Ruta donde se almacenar� la foto
 	$ruta = "img/productos";
+         chmod($ruta, 0777);
 	//extraemos la imagen o foto en archivo
-	$archivo = $_FILES["foto"]["tmp_name"];
+	$archivo = $_FILES["fotoDulce"]["tmp_name"];
 	//extraer el nombre del archivo
-	$nombreArchivo = $_FILES["foto"]["name"];
+	$nombreArchivo = $_FILES["fotoDulce"]["name"];
 
 	$rutaArch = $ruta . "/" . $nombreArchivo;
  
 //hacer consultas para ver que onda con las claves
 $sql = "call proceDulceria('$nombProd','$TipoProd','$PrecioProd','$reseniaProd','$rutaArch');";
+move_uploaded_file($_FILES['fotoDulce']['tmp_name'],$rutaArch);
 		//checar conect
 if (mysqli_query($miconexion, $sql)) {
     echo "Producto Registrado correctamente<br> causa: $sql";

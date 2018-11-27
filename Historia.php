@@ -75,7 +75,7 @@
 				<p>Un Poco de Historia</p>
 				<?php
 					$conexion=mysqli_connect("localhost","root","","CineXilotzin");
-					$query=$conexion->query("SELECT iCineHistoria FROM CineXilotzin.CineHistoria;");
+					$query=$conexion->query("SELECT iCineHistoria FROM CineXilotzin.CineHistoria where Link_Facebook='https://www.facebook.com/CineTeatroXilotzin';");
 					while($row=$query->fetch_assoc()){
 					echo'<option value="'.$row['iCineHistoria'].'">'.$row['iCineHistoria'].'</option>'."\n";
 					}
@@ -112,7 +112,7 @@
 				<p>Telefono:</p>
 				<?php
 					$conexion=mysqli_connect("localhost","root","","CineXilotzin");
-					$query=$conexion->query("SELECT TelefonoCine FROM CineXilotzin.CineHistoria;");
+					$query=$conexion->query("SELECT TelefonoCine FROM CineXilotzin.CineHistoria where Link_Facebook='https://www.facebook.com/CineTeatroXilotzin';");
 					while($row=$query->fetch_assoc()){
 					echo'<option value="'.$row['iCineHistoria'].'">'.$row['TelefonoCine'].'</option>'."\n";
 					}
@@ -120,7 +120,7 @@
 				<p>E-mail</p>
 				<?php
 					$conexion=mysqli_connect("localhost","root","","CineXilotzin");
-					$query=$conexion->query("SELECT `E-Mail_Cine` FROM CineXilotzin.CineHistoria;");
+					$query=$conexion->query("SELECT `E-Mail_Cine` FROM CineXilotzin.CineHistoria where Link_Facebook='https://www.facebook.com/CineTeatroXilotzin';");
 					while($row=$query->fetch_assoc()){
 					echo'<option value="'.$row['iCineHistoria'].'">'.$row['E-Mail_Cine'].'</option>'."\n";
 					}
